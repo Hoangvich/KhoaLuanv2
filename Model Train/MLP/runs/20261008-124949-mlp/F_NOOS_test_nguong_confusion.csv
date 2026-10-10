@@ -1,0 +1,5 @@
+,du_doan_BENIGN,du_doan_DoS/DDoS,du_doan_PortScan,du_doan_BruteForce
+that_BENIGN,425530,144,5,3
+that_DoS/DDoS,216,75072,0,0
+that_PortScan,2,1,391,0
+that_BruteForce,37,2,0,20533

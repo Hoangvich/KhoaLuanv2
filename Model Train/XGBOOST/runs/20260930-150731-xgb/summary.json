@@ -1,0 +1,32 @@
+{
+  "run_id": "20260930-150731-xgb",
+  "best_params": {
+    "subsample": 0.7,
+    "reg_lambda": 10,
+    "min_child_weight": 5,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "cw_power": 0,
+    "colsample_bytree": 0.8
+  },
+  "summary": {
+    "F_NOOS": {
+      "macro_f1": 0.998504,
+      "fpr_benign": 7.3e-05,
+      "model_mb": 1.31,
+      "ms_per_batch": 244.3,
+      "batch_rows": 10000,
+      "ms_per_1_flow": 1.94
+    },
+    "F_ALL": {
+      "macro_f1": 0.998964,
+      "fpr_benign": 4.7e-05,
+      "model_mb": 0.92,
+      "ms_per_batch": 181.9,
+      "batch_rows": 10000,
+      "ms_per_1_flow": 1.59
+    }
+  },
+  "quick": false,
+  "thoi_gian_phut": 33.1
+}

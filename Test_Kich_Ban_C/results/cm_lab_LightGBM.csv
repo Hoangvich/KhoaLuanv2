@@ -1,0 +1,5 @@
+﻿,Dự_đoán_BENIGN,Dự_đoán_DoS/DDoS,Dự_đoán_PortScan,Dự_đoán_BruteForce
+Thực_tế_BENIGN,663,6,0,0
+Thực_tế_DoS/DDoS,140,2747,0,0
+Thực_tế_PortScan,12493,7,0,0
+Thực_tế_BruteForce,585,16,0,0

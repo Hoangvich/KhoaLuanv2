@@ -1,0 +1,34 @@
+{
+  "run_id": "20261008-124949-mlp",
+  "best_params": {
+    "learning_rate_init": 0.001,
+    "hidden_layer_sizes": [
+      256,
+      128,
+      64
+    ],
+    "batch_size": 1024,
+    "balance_power": 0,
+    "alpha": 1e-05
+  },
+  "summary": {
+    "F_NOOS": {
+      "macro_f1": 0.99649,
+      "fpr_benign": 0.000357,
+      "model_mb": 0.8,
+      "ms_per_batch": 24.5,
+      "batch_rows": 10000,
+      "ms_per_1_flow": 1.01
+    },
+    "F_ALL": {
+      "macro_f1": 0.996741,
+      "fpr_benign": 0.000594,
+      "model_mb": 0.82,
+      "ms_per_batch": 23.0,
+      "batch_rows": 10000,
+      "ms_per_1_flow": 0.84
+    }
+  },
+  "quick": false,
+  "thoi_gian_phut": 48.3
+}

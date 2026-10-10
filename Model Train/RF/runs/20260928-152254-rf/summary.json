@@ -1,0 +1,30 @@
+{
+  "run_id": "20260928-152254-rf",
+  "best_params": {
+    "min_samples_leaf": 1,
+    "max_samples": 0.25,
+    "max_features": 0.35,
+    "max_depth": 40,
+    "class_weight": null
+  },
+  "summary": {
+    "F_NOOS": {
+      "macro_f1": 0.998153,
+      "fpr_benign": 0.000162,
+      "model_mb": 4.3,
+      "ms_per_batch": 99.6,
+      "batch_rows": 10000,
+      "ms_per_1_flow": 46.79
+    },
+    "F_ALL": {
+      "macro_f1": 0.998618,
+      "fpr_benign": 5.6e-05,
+      "model_mb": 3.7,
+      "ms_per_batch": 90.2,
+      "batch_rows": 10000,
+      "ms_per_1_flow": 45.8
+    }
+  },
+  "quick": false,
+  "thoi_gian_phut": 159.8
+}

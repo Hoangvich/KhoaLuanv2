@@ -1,0 +1,3 @@
+,source_dataset,label,attack_subtype,n,ti_le_dung,ti_le_bao_tan_cong
+0,2018,BENIGN,-,441077,0.9896,0.0104
+1,2018,BruteForce,SSH,93818,0.0,0.0

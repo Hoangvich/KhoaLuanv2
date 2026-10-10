@@ -1,0 +1,9 @@
+,source_dataset,label,attack_subtype,n,ti_le_dung,ti_le_bao_tan_cong
+0,2017,BENIGN,-,1676871,0.9354,0.0646
+1,2017,DoS/DDoS,HTTP Flood (LOIC),127982,0.3635,0.3635
+2,2017,DoS/DDoS,Slowloris,3645,0.0003,0.0003
+3,2017,DoS/DDoS,HTTP Flood,172407,0.0066,0.0622
+4,2017,DoS/DDoS,Slow HTTP DoS,2331,0.0764,0.0764
+5,2017,BruteForce,HTTP Form Login,151,0.0,0.4503
+6,2017,BruteForce,FTP,5911,0.0,0.0
+7,2017,BruteForce,SSH,2977,0.0,0.9839

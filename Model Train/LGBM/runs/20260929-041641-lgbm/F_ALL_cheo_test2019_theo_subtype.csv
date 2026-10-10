@@ -1,0 +1,6 @@
+,source_dataset,label,attack_subtype,n,ti_le_dung,ti_le_bao_tan_cong
+0,2019,BENIGN,-,353,0.9972,0.0028
+1,2019,DoS/DDoS,HTTP Flood,1,0.0,0.0
+2,2019,DoS/DDoS,Reflection/Amplification,20901,0.0,0.0001
+3,2019,DoS/DDoS,SYN Flood,4533,0.0022,0.004
+4,2019,DoS/DDoS,UDP Flood,44641,0.0,0.0001
