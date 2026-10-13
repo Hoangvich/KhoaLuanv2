@@ -23,3 +23,16 @@ desktop.ini
 !.vscode/settings.json
 .idea/
 *.sublime-workspace
+
+# Hệ thống (backend / frontend)
+backend/.env
+backend/data/
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Dữ liệu hợp nhất quá lớn cho GitHub (> 50 MB) — chia sẻ qua Drive
+Data/data/processed/ALL.csv
+Data/data/processed/unified.parquet
+Data/data/processed/unified_2017.parquet
+Data/data/processed/unified_2018.parquet

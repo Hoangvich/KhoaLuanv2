@@ -1,0 +1,47 @@
+[
+  {
+    "tag": "B1",
+    "train": "2017",
+    "test": "2018",
+    "n_train": 2290303,
+    "n_test": 591454,
+    "shared": [
+      "BENIGN",
+      "BruteForce"
+    ],
+    "only_test": [],
+    "f1": 0.4564,
+    "seconds": 121.7
+  },
+  {
+    "tag": "B2",
+    "train": "2017",
+    "test": "2019",
+    "n_train": 2290303,
+    "n_test": 283009,
+    "shared": [
+      "BENIGN",
+      "DDoS"
+    ],
+    "only_test": [],
+    "f1": 0.0013,
+    "seconds": 87.5
+  },
+  {
+    "tag": "B3",
+    "train": "2018+2019",
+    "test": "2017",
+    "n_train": 874463,
+    "n_test": 2290303,
+    "shared": [
+      "BENIGN",
+      "DDoS",
+      "BruteForce"
+    ],
+    "only_test": [
+      "PortScan"
+    ],
+    "f1": 0.3723,
+    "seconds": 25.9
+  }
+]

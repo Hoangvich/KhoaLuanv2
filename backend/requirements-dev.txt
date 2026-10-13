@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest==8.3.3
+# Phát lại pcap thành CSV luồng (giả lập CICFlowMeter khi chưa có sensor)
+scapy==2.6.0

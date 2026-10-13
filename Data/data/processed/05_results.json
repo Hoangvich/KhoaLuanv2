@@ -1,0 +1,359 @@
+{
+  "best": "RandomForest(100)",
+  "results": {
+    "DecisionTree(d=8)": {
+      "train_rows": 2260546,
+      "seconds": 143.3,
+      "macro_f1_val": 0.9943,
+      "macro_f1_test": 0.9958,
+      "report": {
+        "BENIGN": {
+          "precision": 0.9997438733664891,
+          "recall": 0.9981677879130205,
+          "f1-score": 0.9989552089792968,
+          "support": 355854.0
+        },
+        "BruteForce": {
+          "precision": 0.9985310809908526,
+          "recall": 0.9983311081441922,
+          "f1-score": 0.9984310845545281,
+          "support": 14980.0
+        },
+        "DDoS": {
+          "precision": 0.998789655819028,
+          "recall": 0.9986704847617099,
+          "f1-score": 0.9987300667354192,
+          "support": 58668.0
+        },
+        "PortScan": {
+          "precision": 0.9749342076879934,
+          "recall": 0.9995576786978061,
+          "f1-score": 0.9870924061414812,
+          "support": 22608.0
+        },
+        "accuracy": 0.9983079339098891,
+        "macro avg": {
+          "precision": 0.9929997044660908,
+          "recall": 0.9986817648791823,
+          "f1-score": 0.9958021916026814,
+          "support": 452110.0
+        },
+        "weighted avg": {
+          "precision": 0.9983392448766948,
+          "recall": 0.9983079339098891,
+          "f1-score": 0.9983154215921471,
+          "support": 452110.0
+        }
+      },
+      "cm": [
+        [
+          355202,
+          22,
+          70,
+          560
+        ],
+        [
+          24,
+          14955,
+          1,
+          0
+        ],
+        [
+          57,
+          0,
+          58590,
+          21
+        ],
+        [
+          10,
+          0,
+          0,
+          22598
+        ]
+      ],
+      "classes": [
+        "BENIGN",
+        "BruteForce",
+        "DDoS",
+        "PortScan"
+      ],
+      "avg_precision": {
+        "BENIGN": 0.9998,
+        "BruteForce": 0.9972,
+        "DDoS": 0.9988,
+        "PortScan": 0.9943
+      }
+    },
+    "RandomForest(100)": {
+      "train_rows": 2260546,
+      "seconds": 168.7,
+      "macro_f1_val": 0.9983,
+      "macro_f1_test": 0.9991,
+      "report": {
+        "BENIGN": {
+          "precision": 0.999862270180932,
+          "recall": 0.9996234410741484,
+          "f1-score": 0.9997428413640369,
+          "support": 355854.0
+        },
+        "BruteForce": {
+          "precision": 1.0,
+          "recall": 0.9994659546061415,
+          "f1-score": 0.999732905982906,
+          "support": 14980.0
+        },
+        "DDoS": {
+          "precision": 0.9997612591872581,
+          "recall": 0.9993011522465398,
+          "f1-score": 0.9995311527674774,
+          "support": 58668.0
+        },
+        "PortScan": {
+          "precision": 0.9947201689545935,
+          "recall": 1.0,
+          "f1-score": 0.9973530968766543,
+          "support": 22608.0
+        },
+        "accuracy": 0.9995952312490323,
+        "macro avg": {
+          "precision": 0.998585924580696,
+          "recall": 0.9995976369817074,
+          "f1-score": 0.9990899992477686,
+          "support": 452110.0
+        },
+        "weighted avg": {
+          "precision": 0.99959659248123,
+          "recall": 0.9995952312490323,
+          "f1-score": 0.9995955419856488,
+          "support": 452110.0
+        }
+      },
+      "cm": [
+        [
+          355720,
+          0,
+          14,
+          120
+        ],
+        [
+          8,
+          14972,
+          0,
+          0
+        ],
+        [
+          41,
+          0,
+          58627,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          22608
+        ]
+      ],
+      "classes": [
+        "BENIGN",
+        "BruteForce",
+        "DDoS",
+        "PortScan"
+      ],
+      "avg_precision": {
+        "BENIGN": 1.0,
+        "BruteForce": 0.9999,
+        "DDoS": 1.0,
+        "PortScan": 0.9989
+      }
+    },
+    "HistGradientBoosting": {
+      "train_rows": 2260546,
+      "seconds": 72.4,
+      "macro_f1_val": 0.9934,
+      "macro_f1_test": 0.9989,
+      "report": {
+        "BENIGN": {
+          "precision": 0.9999015847664466,
+          "recall": 0.9992890342668622,
+          "f1-score": 0.9995952156741487,
+          "support": 355854.0
+        },
+        "BruteForce": {
+          "precision": 0.9999332398691502,
+          "recall": 0.9998664886515354,
+          "f1-score": 0.9998998631463,
+          "support": 14980.0
+        },
+        "DDoS": {
+          "precision": 0.9977368635992376,
+          "recall": 0.9994375127838003,
+          "f1-score": 0.9985864641166252,
+          "support": 58668.0
+        },
+        "PortScan": {
+          "precision": 0.994763937167246,
+          "recall": 1.0,
+          "f1-score": 0.997375096503805,
+          "support": 22608.0
+        },
+        "accuracy": 0.9993629868837229,
+        "macro avg": {
+          "precision": 0.99808390635052,
+          "recall": 0.9996482589255494,
+          "f1-score": 0.9988641598602197,
+          "support": 452110.0
+        },
+        "weighted avg": {
+          "precision": 0.9993648180394952,
+          "recall": 0.9993629868837229,
+          "f1-score": 0.9993633909601475,
+          "support": 452110.0
+        }
+      },
+      "cm": [
+        [
+          355601,
+          1,
+          133,
+          119
+        ],
+        [
+          2,
+          14978,
+          0,
+          0
+        ],
+        [
+          33,
+          0,
+          58635,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          22608
+        ]
+      ],
+      "classes": [
+        "BENIGN",
+        "BruteForce",
+        "DDoS",
+        "PortScan"
+      ],
+      "avg_precision": {
+        "BENIGN": 0.9999,
+        "BruteForce": 0.9999,
+        "DDoS": 0.9976,
+        "PortScan": 0.9989
+      }
+    },
+    "LogisticRegression": {
+      "train_rows": 400000,
+      "seconds": 28.0,
+      "macro_f1_val": 0.9141,
+      "macro_f1_test": 0.9246,
+      "report": {
+        "BENIGN": {
+          "precision": 0.9984478955289378,
+          "recall": 0.9526716012746801,
+          "f1-score": 0.9750227569158735,
+          "support": 355854.0
+        },
+        "BruteForce": {
+          "precision": 0.8115714130788417,
+          "recall": 0.99913217623498,
+          "f1-score": 0.8956376039734307,
+          "support": 14980.0
+        },
+        "DDoS": {
+          "precision": 0.8758168950459269,
+          "recall": 0.9913922410854299,
+          "f1-score": 0.9300276627384512,
+          "support": 58668.0
+        },
+        "PortScan": {
+          "precision": 0.8148562357949422,
+          "recall": 0.9990711252653928,
+          "f1-score": 0.8976096330001788,
+          "support": 22608.0
+        },
+        "accuracy": 0.9615558160624627,
+        "macro avg": {
+          "precision": 0.8751731098621621,
+          "recall": 0.9855667859651207,
+          "f1-score": 0.9245744141569836,
+          "support": 452110.0
+        },
+        "weighted avg": {
+          "precision": 0.9671622228238309,
+          "recall": 0.9615558160624627,
+          "f1-score": 0.9626825793445637,
+          "support": 452110.0
+        }
+      },
+      "cm": [
+        [
+          339012,
+          3475,
+          8235,
+          5132
+        ],
+        [
+          13,
+          14967,
+          0,
+          0
+        ],
+        [
+          505,
+          0,
+          58163,
+          0
+        ],
+        [
+          9,
+          0,
+          12,
+          22587
+        ]
+      ],
+      "classes": [
+        "BENIGN",
+        "BruteForce",
+        "DDoS",
+        "PortScan"
+      ],
+      "avg_precision": {
+        "BENIGN": 0.9991,
+        "BruteForce": 0.9685,
+        "DDoS": 0.9929,
+        "PortScan": 0.9748
+      }
+    }
+  },
+  "top_features": [
+    "Init_Win_bytes_forward",
+    "Average Packet Size",
+    "Total Length of Fwd Packets",
+    "Fwd Packet Length Max",
+    "Packet Length Variance",
+    "Flow Packets/s",
+    "ACK Flag Count",
+    "Total Backward Packets",
+    "Max Packet Length",
+    "Packet Length Std",
+    "Fwd Header Length",
+    "Bwd Header Length",
+    "Bwd Packet Length Max",
+    "Flow IAT Std",
+    "act_data_pkt_fwd",
+    "Bwd Packet Length Min",
+    "Init_Win_bytes_backward",
+    "Min Packet Length",
+    "Fwd Packet Length Min",
+    "Total Fwd Packets"
+  ]
+}
