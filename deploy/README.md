@@ -87,6 +87,29 @@ Pipeline sẽ gom cảnh báo, dashboard cập nhật sau vài giây. (Chỉ ch�
 
 **b) Sensor thật.** Trỏ CICFlowMeter ghi CSV vào `/opt/aahkl/backend/data/incoming/`. Pipeline tự đọc phần mới. Nhớ `chown ids:ids` thư mục nếu CICFlowMeter chạy bằng user khác.
 
+## 5.1. (Tuỳ chọn) Bật sensor sống — giám sát trực tiếp
+
+Mặc định pipeline chỉ đọc CSV/replay. Bật thêm **sensor** để hệ thống **giám sát trực tiếp**: liên tục bắt gói trên cổng mạng của VPS, trích xuất luồng và nạp vào pipeline. Khi đó dashboard phản ánh lưu lượng thật đến/đi của máy theo thời gian gần thực (gồm cả các lượt quét cổng thật mà mọi IP public trên Internet đều nhận).
+
+Đây là chức năng **phòng thủ/quan sát**: chỉ nghe lưu lượng của chính VPS, không tác động ra ngoài.
+
+```bash
+cd /opt/aahkl && git pull
+# Cần tcpdump và scapy (nếu chưa có)
+apt-get install -y tcpdump
+sudo -u ids /opt/aahkl/backend/.venv/bin/python -m pip install scapy==2.6.0
+# Cài và bật dịch vụ sensor
+install -m 755 deploy/sensor.sh /opt/aahkl/deploy/sensor.sh
+install -m 644 deploy/ids-sensor.service /etc/systemd/system/ids-sensor.service
+systemctl daemon-reload
+systemctl enable --now ids-sensor.service
+systemctl status ids-sensor --no-pager
+```
+
+- Mặc định sensor nghe cổng ra Internet (tự dò). Muốn nghe **mạng riêng Tailscale** thì sửa dòng `Environment=IFACE=tailscale0` trong `/etc/systemd/system/ids-sensor.service` rồi `systemctl daemon-reload && systemctl restart ids-sensor`.
+- Theo dõi: `journalctl -u ids-sensor -f` (thấy "Đã ghi N luồng..." mỗi ~30 s).
+- Tắt: `systemctl disable --now ids-sensor`.
+
 ## 6. HTTPS và truy cập (quan trọng khi mở ra Internet)
 
 Hiện cấu hình chạy HTTP qua IP. Vì **mật khẩu đăng nhập đi dạng rõ (cleartext) trên HTTP**, khi demo công khai nên:

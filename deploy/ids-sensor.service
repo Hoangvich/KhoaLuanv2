@@ -1,0 +1,18 @@
+[Unit]
+Description=IDS AAHKL - Sensor giam sat luu luong (bat goi -> pipeline)
+After=network.target ids-pipeline.service
+Wants=ids-pipeline.service
+
+[Service]
+Type=simple
+# Can root de bat goi (tcpdump). Chi quan sat luu luong cua chinh may, ghi CSV cho pipeline.
+User=root
+WorkingDirectory=/opt/aahkl/backend
+Environment=PYTHONUTF8=1
+# Doi cong nghe bang cach them: Environment=IFACE=tailscale0  hoac  Environment=WINDOW=20
+ExecStart=/opt/aahkl/deploy/sensor.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
